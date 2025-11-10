@@ -1,5 +1,9 @@
 "use strict";
 
+let numOne;
+let numTwo;
+let operator;
+
 function add(...num) {
   return num.reduce((total, current) => total + current);
 }
