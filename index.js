@@ -1,7 +1,6 @@
 "use strict";
 
-let numOne;
-let numTwo;
+let nums = [];
 let operator;
 
 function add(...num) {
