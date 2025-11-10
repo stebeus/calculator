@@ -20,6 +20,10 @@ function divide(...num) {
   return num.reduce((quotient, current) => quotient / current);
 }
 
+function operate(operation, ...nums) {
+  return operation(...nums);
+}
+
 console.log(
   add(2, 4, 10),
   subtract(16, 8),
@@ -28,3 +32,5 @@ console.log(
   divide(50, 5),
   divide(50, 5, 2)
 );
+
+console.log(operate(add, 40, 100, 10));
