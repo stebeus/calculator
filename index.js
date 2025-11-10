@@ -1,7 +1,7 @@
 "use strict";
 
 let nums = [100, -50, 15];
-let operator;
+let operation = add;
 
 function add(...num) {
   return num.reduce((total, current) => total + current);
@@ -32,4 +32,4 @@ console.log(
   divide(50, 5, 2)
 );
 
-console.log(operate(add, nums));
+console.log(operate(operation, nums));
