@@ -1,6 +1,6 @@
 "use strict";
 
-let nums = [];
+let nums = [100, -50, 15];
 let operator;
 
 function add(...num) {
@@ -19,7 +19,7 @@ function divide(...num) {
   return num.reduce((quotient, current) => quotient / current);
 }
 
-function operate(operation, ...nums) {
+function operate(operation, nums) {
   return operation(...nums);
 }
 
@@ -32,4 +32,4 @@ console.log(
   divide(50, 5, 2)
 );
 
-console.log(operate(add, 40, 100, 10));
+console.log(operate(add, nums));
