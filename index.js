@@ -31,7 +31,7 @@ function divide(...num) {
   return num.reduce((quotient, current) => quotient / current);
 }
 
-function operate(operation, nums) {
+function calculate(operation, nums) {
   return operation(...nums);
 }
 
@@ -44,4 +44,4 @@ console.log(
   divide(50, 5, 2)
 );
 
-console.log(operate(operator, nums));
+console.log(calculate(operator, nums));
