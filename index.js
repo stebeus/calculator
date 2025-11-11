@@ -33,10 +33,6 @@ btnOperator.forEach((btn) => {
   });
 });
 
-btnOperator.addEventListener("click", (e) => {
-  console.log(e.target);
-});
-
 function add(...num) {
   return num.reduce((total, current) => total + current);
 }
