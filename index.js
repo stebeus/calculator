@@ -1,6 +1,5 @@
 "use strict";
 
-const display = document.querySelector(".display");
 const expression = document.querySelector("#expression");
 const result = document.querySelector("#result");
 const containerNums = document.querySelector(".numbers");
