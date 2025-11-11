@@ -1,7 +1,17 @@
 "use strict";
 
+const display = document.querySelector(".display");
+const containerNums = document.querySelector(".numbers");
+
+const btn = document.createElement("button");
+
 let nums = [100, -50, 15];
 let operation = add;
+
+for (let i = 1; i <= 9; i++) {
+  btn.textContent = i;
+  containerNums.appendChild(btn.cloneNode(i));
+}
 
 function add(...num) {
   return num.reduce((total, current) => total + current);
