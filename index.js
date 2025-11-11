@@ -5,6 +5,12 @@ const expression = document.querySelector("#expression");
 const result = document.querySelector("#result");
 const containerNums = document.querySelector(".numbers");
 
+const btnClear = document.querySelector("[data-action='clear-all']");
+const btnRemove = document.querySelector("[data-action='remove']");
+const btnNum = document.querySelector("[data-action='input-num']");
+const btnOperator = document.querySelector("[data-action='input-operator']");
+const btnCalculate = document.querySelector("[data-action='calculate']");
+
 const btn = document.createElement("button");
 
 let nums = [100, -50, 15];
@@ -35,10 +41,6 @@ function divide(...num) {
 function calculate(operation, nums) {
   return operation(...nums);
 }
-
-// btnNum.addEventListener("click", (e) => {
-//   console.log(e);
-// });
 
 console.log(
   add(2, 4, 10),
