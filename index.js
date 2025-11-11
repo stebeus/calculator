@@ -21,6 +21,14 @@ for (let i = 1; i <= 9; i++) {
   containerNums.appendChild(btn.cloneNode(i));
 }
 
+btnNum.addEventListener("click", (e) => {
+  console.log(e.target);
+});
+
+btnOperator.addEventListener("click", (e) => {
+  console.log(e.target);
+});
+
 function add(...num) {
   return num.reduce((total, current) => total + current);
 }
