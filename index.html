@@ -14,19 +14,19 @@
       </div>
       <div class="buttons">
         <div class="controls">
-          <button class="btn--clear">Clear all</button>
-          <button class="btn--clear">Remove</button>
+          <button class="btn--clear" data-action="clear-all">Clear all</button>
+          <button class="btn--clear" data-action="remove">Remove</button>
         </div>
         <div class="numbers">
-          <button>0</button>
-          <button>.</button>
-          <button class="btn--operator">=</button>
+          <button data-action="input-num">0</button>
+          <button data-action="input-num">.</button>
+          <button class="btn--operator" data-action="calculate">=</button>
         </div>
         <div class="operators">
-          <button class="btn--operator">+</button>
-          <button class="btn--operator">-</button>
-          <button class="btn--operator">*</button>
-          <button class="btn--operator">÷</button>
+          <button class="btn--operator" data-action="input-operator">+</button>
+          <button class="btn--operator" data-action="input-operator">-</button>
+          <button class="btn--operator" data-action="input-operator">*</button>
+          <button class="btn--operator" data-action="input-operator">÷</button>
         </div>
       </div>
     </main>

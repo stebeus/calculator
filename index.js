@@ -12,6 +12,7 @@ let operator = add;
 
 for (let i = 1; i <= 9; i++) {
   btnNum.textContent = i;
+  btnNum.setAttribute("data-action", "input-num");
   containerNums.appendChild(btnNum.cloneNode(i));
 }
 
