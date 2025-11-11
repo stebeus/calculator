@@ -6,8 +6,8 @@ const containerNums = document.querySelector(".numbers");
 
 const btnClear = document.querySelector("[data-action='clear-all']");
 const btnRemove = document.querySelector("[data-action='remove']");
-const btnNum = document.querySelector("[data-action='input-num']");
-const btnOperator = document.querySelector("[data-action='input-operator']");
+const btnNum = document.querySelectorAll("[data-action='input-num']");
+const btnOperator = document.querySelectorAll("[data-action='input-operator']");
 const btnCalculate = document.querySelector("[data-action='calculate']");
 
 const btn = document.createElement("button");
@@ -21,8 +21,16 @@ for (let i = 1; i <= 9; i++) {
   containerNums.appendChild(btn.cloneNode(i));
 }
 
-btnNum.addEventListener("click", (e) => {
-  console.log(e.target);
+btnNum.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});
+
+btnOperator.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
 });
 
 btnOperator.addEventListener("click", (e) => {
