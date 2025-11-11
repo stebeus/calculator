@@ -21,18 +21,6 @@ const btnCalculate = document.querySelector("[data-action='calculate']");
 let nums = [100, -50, 15];
 let operator = add;
 
-btnNum.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    console.log(e.target);
-  });
-});
-
-btnOperator.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    console.log(e.target);
-  });
-});
-
 function add(...num) {
   return num.reduce((total, current) => total + current);
 }
@@ -52,6 +40,18 @@ function divide(...num) {
 function calculate(operation, nums) {
   return operation(...nums);
 }
+
+btnNum.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});
+
+btnOperator.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});
 
 console.log(
   add(2, 4, 10),
