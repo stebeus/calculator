@@ -8,7 +8,7 @@ const containerNums = document.querySelector(".numbers");
 const btnNum = document.createElement("button");
 
 let nums = [100, -50, 15];
-let operation = add;
+let operator = add;
 
 for (let i = 1; i <= 9; i++) {
   btnNum.textContent = i;
@@ -44,4 +44,4 @@ console.log(
   divide(50, 5, 2)
 );
 
-console.log(operate(operation, nums));
+console.log(operate(operator, nums));
