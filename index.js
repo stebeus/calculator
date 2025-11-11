@@ -4,22 +4,22 @@ const expression = document.querySelector("#expression");
 const result = document.querySelector("#result");
 const containerNums = document.querySelector(".numbers");
 
-const btnClear = document.querySelector("[data-action='clear-all']");
-const btnRemove = document.querySelector("[data-action='remove']");
-const btnNum = document.querySelectorAll("[data-action='input-num']");
-const btnOperator = document.querySelectorAll("[data-action='input-operator']");
-const btnCalculate = document.querySelector("[data-action='calculate']");
-
 const btn = document.createElement("button");
-
-let nums = [100, -50, 15];
-let operator = add;
 
 for (let i = 1; i <= 9; i++) {
   btn.textContent = i;
   btn.setAttribute("data-action", "input-num");
   containerNums.appendChild(btn.cloneNode(i));
 }
+
+const btnClear = document.querySelector("[data-action='clear-all']");
+const btnRemove = document.querySelector("[data-action='remove']");
+const btnNum = document.querySelectorAll("[data-action='input-num']");
+const btnOperator = document.querySelectorAll("[data-action='input-operator']");
+const btnCalculate = document.querySelector("[data-action='calculate']");
+
+let nums = [100, -50, 15];
+let operator = add;
 
 btnNum.forEach((btn) => {
   btn.addEventListener("click", (e) => {
