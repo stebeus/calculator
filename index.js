@@ -8,9 +8,6 @@ const btnClear = document.querySelector("[data-action='clear']");
 const btnRemove = document.querySelector("[data-action='remove']");
 const btnCalc = document.querySelector("[data-action='calc']");
 
-const inputNum = document.querySelectorAll("[data-input='num']");
-const inputOperator = document.querySelectorAll("[data-input='operator']");
-
 const setAttributes = function (element, options) {
   Object.keys(options).forEach((attr) =>
     element.setAttribute(attr, options[attr])
@@ -24,6 +21,9 @@ for (let num = 1; num <= 9; num++) {
   btnEl.textContent = num;
   nums.appendChild(btnEl.cloneNode(num));
 }
+
+const inputNum = document.querySelectorAll("[data-input='num']");
+const inputOperator = document.querySelectorAll("[data-input='operator']");
 
 let numOne;
 let numTwo;
