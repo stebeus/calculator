@@ -25,7 +25,7 @@ for (let num = 1; num <= 9; num++) {
 const inputNum = document.querySelectorAll("[data-input='num']");
 const inputOperator = document.querySelectorAll("[data-input='operator']");
 
-let num;
+let insertedNum;
 let operandOne;
 let operandTwo;
 let operator;
@@ -58,8 +58,8 @@ btnCalc.addEventListener("click", calc);
 
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
-    num = Number((expression.value += btn.value));
-    operandOne = num;
+    insertedNum = Number((expression.value += btn.value));
+    operandOne = insertedNum;
   });
 });
 inputOperator.forEach((btn) => {
