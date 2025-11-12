@@ -13,16 +13,16 @@ for (let i = 1; i <= 9; i++) {
   containerNums.appendChild(btn.cloneNode(i));
 }
 
-const btnClear = document.querySelector("[data-action='clear-all']");
+const btnClear = document.querySelector("[data-action='clear']");
 const btnRemove = document.querySelector("[data-action='remove']");
 const btnNum = document.querySelectorAll("[data-action='input-num']");
 const btnOperator = document.querySelectorAll("[data-action='input-operator']");
-const btnCalculate = document.querySelector("[data-action='calculate']");
+const btnCalculate = document.querySelector("[data-action='calc']");
 
 let num;
 let operands = [];
 let operator;
-let answer;
+let ans;
 
 function add(...num) {
   return num.reduce((total, current) => total + current);
@@ -69,15 +69,15 @@ btnClear.addEventListener("click", () => {
 
 btnCalculate.addEventListener("click", () => {
   if (operands.length === 0) {
-    answer = num;
+    ans = num;
   } else if (operands.length > 0) {
     operands.push(num);
-    answer = calculate(operator, operands);
+    ans = calculate(operator, operands);
     operands = [];
   }
 
-  result.textContent = answer;
+  result.textContent = ans;
 
   console.log(operands);
-  console.log(answer);
+  console.log(ans);
 });
