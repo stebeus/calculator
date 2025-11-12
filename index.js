@@ -22,6 +22,7 @@ const btnCalculate = document.querySelector("[data-action='calculate']");
 let num;
 let operands = [];
 let operator;
+let answer;
 
 function add(...num) {
   return num.reduce((total, current) => total + current);
@@ -67,7 +68,16 @@ btnClear.addEventListener("click", () => {
 });
 
 btnCalculate.addEventListener("click", () => {
-  operands.push(num);
-  let answer = calculate(operator, operands);
+  if (operands.length === 0) {
+    answer = num;
+  } else if (operands.length > 0) {
+    operands.push(num);
+    answer = calculate(operator, operands);
+    operands = [];
+  }
+
   result.textContent = answer;
+
+  console.log(operands);
+  console.log(answer);
 });
