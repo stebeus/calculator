@@ -4,7 +4,7 @@ const expression = document.querySelector("#expression");
 const result = document.querySelector("#result");
 const nums = document.querySelector(".numbers");
 
-const btnClear = document.querySelector("[data-action='clear']");
+const btnAllClear = document.querySelector("[data-action='all-clear']");
 const btnRemove = document.querySelector("[data-action='remove']");
 const btnCalc = document.querySelector("[data-action='calc']");
 
@@ -31,7 +31,7 @@ let operandTwo;
 let operator;
 let answer;
 
-function clear() {}
+function allClear() {}
 function remove() {}
 
 function add(addendOne, addendTwo) {
@@ -52,7 +52,7 @@ function calc(operator, operandOne, operandTwo) {
   return answer;
 }
 
-btnClear.addEventListener("click", clear);
+btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
 btnCalc.addEventListener("click", calc);
 
