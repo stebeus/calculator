@@ -62,5 +62,8 @@ inputNum.forEach((btn) => {
   });
 });
 inputOperator.forEach((btn) => {
-  btn.addEventListener("click", () => {});
+  btn.addEventListener("click", () => {
+    operator = window[btn.value];
+    console.log(operator);
+  });
 });
