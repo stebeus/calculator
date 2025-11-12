@@ -58,11 +58,8 @@ btnOperator.forEach((btn) => {
   });
 });
 
-console.log(
-  add(2, 4, 10),
-  subtract(16, 8),
-  subtract(16, 20),
-  multiply(8, 2),
-  divide(50, 5),
-  divide(50, 5, 2)
-);
+btnCalculate.addEventListener("click", () => {
+  operands.push(num);
+  let answer = calculate(operator, operands);
+  result.textContent = answer;
+});
