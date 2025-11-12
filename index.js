@@ -47,3 +47,14 @@ const calc = {
     dividend / divisor;
   },
 };
+
+btnClear.addEventListener("click", clear);
+btnRemove.addEventListener("click", remove);
+btnCalc.addEventListener("click", () => {});
+
+inputNum.forEach((btn) => {
+  btn.addEventListener("click", () => {});
+});
+inputOperator.forEach((btn) => {
+  btn.addEventListener("click", () => {});
+});
