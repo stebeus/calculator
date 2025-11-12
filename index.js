@@ -19,3 +19,18 @@ const setAttributes = function (element, options) {
 
 const clear = function () {};
 const remove = function () {};
+
+const calc = {
+  add: function (addendOne, addendTwo) {
+    addendOne + addendTwo;
+  },
+  subtract: function (minuend, subtrahend) {
+    minuend - subtrahend;
+  },
+  multiply: function (multiplicand, multiplier) {
+    multiplicand * multiplier;
+  },
+  divide: function (dividend, divisor) {
+    dividend / divisor;
+  },
+};
