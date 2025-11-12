@@ -54,7 +54,10 @@ btnRemove.addEventListener("click", remove);
 btnCalc.addEventListener("click", () => {});
 
 inputNum.forEach((btn) => {
-  btn.addEventListener("click", () => {});
+  btn.addEventListener("click", () => {
+    num = Number((expression.value += btn.value));
+    operandOne = num;
+  });
 });
 inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {});
