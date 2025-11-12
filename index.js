@@ -24,25 +24,23 @@ let operands = [];
 let operator;
 let ans;
 
-function add(...num) {
-  return num.reduce((total, current) => total + current);
-}
+const calc = {
+  add: function (numOne, numTwo) {
+    return numOne + numTwo;
+  },
 
-function subtract(...num) {
-  return num.reduce((difference, current) => difference - current);
-}
+  subtract: function (numOne, numTwo) {
+    return numOne - numTwo;
+  },
 
-function multiply(...num) {
-  return num.reduce((product, current) => product * current);
-}
+  multiply: function (numOne, numTwo) {
+    return numOne * numTwo;
+  },
 
-function divide(...num) {
-  return num.reduce((quotient, current) => quotient / current);
-}
-
-function calculate(operation, operands) {
-  return operation(...operands);
-}
+  divide: function (numOne, numTwo) {
+    return numOne / numTwo;
+  },
+};
 
 btnNum.forEach((btn) => {
   btn.addEventListener("click", (e) => {
