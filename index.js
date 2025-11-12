@@ -10,3 +10,9 @@ const btnCalc = document.querySelector("[data-action='calc']");
 
 const inputNum = document.querySelectorAll("data-input='num'");
 const inputOperator = document.querySelectorAll("data-input='operator'");
+
+const setAttributes = function (element, options) {
+  Object.keys(options).forEach((attr) =>
+    element.setAttributes(attr, options[attr])
+  );
+};
