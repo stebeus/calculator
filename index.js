@@ -17,6 +17,11 @@ const setAttributes = function (element, options) {
   );
 };
 
+let numOne;
+let numTwo;
+let operator;
+let answer;
+
 const clear = function () {};
 const remove = function () {};
 
