@@ -9,6 +9,7 @@ const btn = document.createElement("button");
 for (let i = 1; i <= 9; i++) {
   btn.textContent = i;
   btn.setAttribute("data-action", "input-num");
+  btn.setAttribute("value", i);
   containerNums.appendChild(btn.cloneNode(i));
 }
 
