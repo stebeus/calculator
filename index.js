@@ -48,12 +48,13 @@ function divide(dividend, divisor) {
 }
 
 function calc(operator, operandOne, operandTwo) {
-  return operator(operandOne, operandTwo);
+  answer = result.value = operator(operandOne, operandTwo);
+  return answer;
 }
 
 btnClear.addEventListener("click", clear);
 btnRemove.addEventListener("click", remove);
-btnCalc.addEventListener("click", () => {});
+btnCalc.addEventListener("click", calc);
 
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
