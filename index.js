@@ -25,6 +25,7 @@ for (let num = 1; num <= 9; num++) {
 const inputNum = document.querySelectorAll("[data-input='num']");
 const inputOperator = document.querySelectorAll("[data-input='operator']");
 
+let num;
 let operandOne;
 let operandTwo;
 let operator;
