@@ -19,10 +19,10 @@ const btnNum = document.querySelectorAll("[data-action='input-num']");
 const btnOperator = document.querySelectorAll("[data-action='input-operator']");
 const btnCalculate = document.querySelector("[data-action='calc']");
 
-let num;
-let operands = [];
+let numOne;
+let numTwo;
 let operator;
-let ans;
+let answer;
 
 const calc = {
   add: function (numOne, numTwo) {
