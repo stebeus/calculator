@@ -16,3 +16,6 @@ const setAttributes = function (element, options) {
     element.setAttributes(attr, options[attr])
   );
 };
+
+const clear = function () {};
+const remove = function () {};
