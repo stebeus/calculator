@@ -58,6 +58,14 @@ btnOperator.forEach((btn) => {
   });
 });
 
+btnClear.addEventListener("click", () => {
+  num = null;
+  operands = [];
+  operator = null;
+  expression.textContent = null;
+  result.textContent = null;
+});
+
 btnCalculate.addEventListener("click", () => {
   operands.push(num);
   let answer = calculate(operator, operands);
