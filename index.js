@@ -17,6 +17,14 @@ const setAttributes = function (element, options) {
   );
 };
 
+const btnEl = document.createElement("button");
+
+for (let num = 1; num <= 9; num++) {
+  setAttributes(btnEl, {"data-input": "num", value: num});
+  btnEl.textContent = num;
+  nums.appendChild(btnEl.cloneNode(num));
+}
+
 let numOne;
 let numTwo;
 let operator;
