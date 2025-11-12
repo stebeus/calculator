@@ -8,11 +8,11 @@ const btnClear = document.querySelector("[data-action='clear']");
 const btnRemove = document.querySelector("[data-action='remove']");
 const btnCalc = document.querySelector("[data-action='calc']");
 
-const setAttributes = function (element, options) {
+function setAttributes(element, options) {
   Object.keys(options).forEach((attr) =>
     element.setAttribute(attr, options[attr])
   );
-};
+}
 
 const btnEl = document.createElement("button");
 
@@ -31,23 +31,25 @@ let operandTwo;
 let operator;
 let answer;
 
-const clear = function () {};
-const remove = function () {};
+function clear() {}
+function remove() {}
 
-const calc = {
-  add: function (addendOne, addendTwo) {
-    addendOne + addendTwo;
-  },
-  subtract: function (minuend, subtrahend) {
-    minuend - subtrahend;
-  },
-  multiply: function (multiplicand, multiplier) {
-    multiplicand * multiplier;
-  },
-  divide: function (dividend, divisor) {
-    dividend / divisor;
-  },
-};
+function add(addendOne, addendTwo) {
+  return addendOne + addendTwo;
+}
+function subtract(minuend, subtrahend) {
+  return minuend - subtrahend;
+}
+function multiply(multiplicand, multiplier) {
+  return multiplicand * multiplier;
+}
+function divide(dividend, divisor) {
+  return dividend / divisor;
+}
+
+function calc(operator, operandOne, operandTwo) {
+  return operator(operandOne, operandTwo);
+}
 
 btnClear.addEventListener("click", clear);
 btnRemove.addEventListener("click", remove);
