@@ -21,7 +21,7 @@ const btnCalculate = document.querySelector("[data-action='calculate']");
 
 let num;
 let operands = [];
-let operator = add;
+let operator;
 
 function add(...num) {
   return num.reduce((total, current) => total + current);
@@ -39,8 +39,8 @@ function divide(...num) {
   return num.reduce((quotient, current) => quotient / current);
 }
 
-function calculate(operation, nums) {
-  return operation(...nums);
+function calculate(operation, operands) {
+  return operation(...operands);
 }
 
 btnNum.forEach((btn) => {
@@ -51,7 +51,10 @@ btnNum.forEach((btn) => {
 
 btnOperator.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    console.log(e.target);
+    operator = window[btn.value];
+    operands.push(num);
+    num = "";
+    expression.textContent = "";
   });
 });
 
