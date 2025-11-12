@@ -19,7 +19,8 @@ const btnNum = document.querySelectorAll("[data-action='input-num']");
 const btnOperator = document.querySelectorAll("[data-action='input-operator']");
 const btnCalculate = document.querySelector("[data-action='calculate']");
 
-let nums = [100, -50, 15];
+let num;
+let operands = [];
 let operator = add;
 
 function add(...num) {
@@ -44,7 +45,7 @@ function calculate(operation, nums) {
 
 btnNum.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    console.log(e.target);
+    num = Number((expression.textContent += btn.value));
   });
 });
 
@@ -62,5 +63,3 @@ console.log(
   divide(50, 5),
   divide(50, 5, 2)
 );
-
-console.log(calculate(operator, nums));
