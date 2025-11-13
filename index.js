@@ -62,10 +62,11 @@ inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (operator === undefined) {
       numOne = Number((result.value += btn.value));
+      expression.append(numOne);
     } else {
       numTwo = Number((result.value += btn.value));
+      expression.append(numTwo);
     }
-    expression.value = [numOne, operator, numTwo];
   });
 });
 
@@ -73,5 +74,6 @@ inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {
     result.value = null;
     operator = window[btn.value];
+    expression.append(btn.textContent);
   });
 });
