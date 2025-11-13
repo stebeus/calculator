@@ -56,17 +56,21 @@ function calc(operation, operandOne, operandTwo) {
 
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
-btnCalc.addEventListener("click", calc);
+btnCalc.addEventListener("click", () => calc(operator, numOne, numTwo));
 
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
-    insertedNum = Number((expression.value += btn.value));
-    operandOne = insertedNum;
+    if (operator === undefined) {
+      numOne = Number((expression.value += btn.value));
+    } else {
+      numTwo = Number((expression.value += btn.value));
+    }
   });
 });
+
 inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {
+    expression.value = null;
     operator = window[btn.value];
-    console.log(operator);
   });
 });
