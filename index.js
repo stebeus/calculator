@@ -29,7 +29,9 @@ let numTwo;
 let operator;
 let answer;
 
-function allClear() {}
+function allClear() {
+  numOne = numTwo = operator = answer = display.value = null;
+}
 function remove() {}
 
 function add(addendOne, addendTwo) {
