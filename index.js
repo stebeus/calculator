@@ -45,6 +45,9 @@ function multiply(multiplicand, multiplier) {
 }
 
 function divide(dividend, divisor) {
+  if (divisor === 0) {
+    return undefined;
+  }
   return dividend / divisor;
 }
 
