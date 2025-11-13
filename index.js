@@ -61,16 +61,17 @@ btnCalc.addEventListener("click", () => calc(operator, numOne, numTwo));
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (operator === undefined) {
-      numOne = Number((expression.value += btn.value));
+      numOne = Number((result.value += btn.value));
     } else {
-      numTwo = Number((expression.value += btn.value));
+      numTwo = Number((result.value += btn.value));
     }
+    expression.value = [numOne, operator, numTwo];
   });
 });
 
 inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {
-    expression.value = null;
+    result.value = null;
     operator = window[btn.value];
   });
 });
