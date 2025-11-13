@@ -1,7 +1,6 @@
 "use strict";
 
-const expression = document.querySelector("#expression");
-const result = document.querySelector("#result");
+const display = document.querySelector("#display");
 const nums = document.querySelector(".numbers");
 
 const btnAllClear = document.querySelector("[data-action='all-clear']");
@@ -51,29 +50,29 @@ function divide(dividend, divisor) {
 
 function calc(operation, operandOne, operandTwo) {
   answer = operation(operandOne, operandTwo);
-  console.log(answer);
+  return answer;
 }
 
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
-btnCalc.addEventListener("click", () => calc(operator, numOne, numTwo));
+btnCalc.addEventListener("click", () => {
+  calc(operator, numOne, numTwo);
+  display.value = answer;
+});
 
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (operator === undefined) {
-      numOne = Number((result.value += btn.value));
-      expression.append(numOne);
+      numOne = Number((display.value += btn.value));
     } else {
-      numTwo = Number((result.value += btn.value));
-      expression.append(numTwo);
+      numTwo = Number((display.value += btn.value));
     }
   });
 });
 
 inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {
-    result.value = null;
     operator = window[btn.value];
-    expression.append(btn.textContent);
+    display.value = null;
   });
 });
