@@ -50,8 +50,8 @@ function divide(dividend, divisor) {
 }
 
 function calc(operation, operandOne, operandTwo) {
-  answer = result.value = operation(operandOne, operandTwo);
-  return answer;
+  answer = operation(operandOne, operandTwo);
+  console.log(answer);
 }
 
 btnAllClear.addEventListener("click", allClear);
