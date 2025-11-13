@@ -53,8 +53,12 @@ function divide(dividend, divisor) {
   return dividend / divisor;
 }
 
+function roundTo(num, decimal) {
+  return Number(num.toFixed(decimal));
+}
+
 function calc(operation, operandOne, operandTwo) {
-  answer = operation(operandOne, operandTwo);
+  answer = roundTo(operation(operandOne, operandTwo), 20);
   return answer;
 }
 
