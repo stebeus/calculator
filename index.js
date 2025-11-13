@@ -49,8 +49,8 @@ function divide(dividend, divisor) {
   return dividend / divisor;
 }
 
-function calc(operator, operandOne, operandTwo) {
-  answer = result.value = operator(operandOne, operandTwo);
+function calc(operation, operandOne, operandTwo) {
+  answer = result.value = operation(operandOne, operandTwo);
   return answer;
 }
 
