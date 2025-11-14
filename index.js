@@ -89,7 +89,12 @@ inputNum.forEach((btn) => {
 
 inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {
-    operator = window[btn.value];
-    display.value = null;
+    if (numOne !== null && numTwo !== null) {
+      calc();
+      operator = window[btn.value];
+    } else {
+      operator = window[btn.value];
+      display.value = null;
+    }
   });
 });
