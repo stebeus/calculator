@@ -66,8 +66,12 @@ function calc(operation, operandOne, operandTwo) {
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
 btnCalc.addEventListener("click", () => {
-  calc(operator, numOne, numTwo);
-  display.value = answer;
+  if (operator === undefined) {
+    return numOne;
+  } else {
+    calc(operator, numOne, numTwo);
+    display.value = answer;
+  }
 });
 
 inputNum.forEach((btn) => {
