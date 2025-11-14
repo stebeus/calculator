@@ -58,9 +58,15 @@ function roundTo(num, decimal) {
 }
 
 function calc(operation, operandOne, operandTwo) {
-  answer = roundTo(operation(operandOne, operandTwo), 20);
-  numOne = answer;
-  return answer;
+  if (operandTwo === undefined) {
+    answer = operandOne;
+    numOne = answer;
+    return answer;
+  } else {
+    answer = roundTo(operation(operandOne, operandTwo), 20);
+    numOne = answer;
+    return answer;
+  }
 }
 
 btnAllClear.addEventListener("click", allClear);
