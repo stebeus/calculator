@@ -82,6 +82,7 @@ inputNum.forEach((btn) => {
       numOne = null;
       numOne = Number((display.value += btn.value));
     } else {
+      display.value = null;
       numTwo = Number((display.value += btn.value));
     }
   });
@@ -94,7 +95,6 @@ inputOperator.forEach((btn) => {
       operator = window[btn.value];
     } else {
       operator = window[btn.value];
-      display.value = null;
     }
   });
 });
