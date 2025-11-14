@@ -24,14 +24,15 @@ for (let num = 1; num <= 9; num++) {
 const inputNum = document.querySelectorAll("[data-input='num']");
 const inputOperator = document.querySelectorAll("[data-input='operator']");
 
-let numOne;
-let numTwo;
-let operator;
-let answer;
+let numOne = null;
+let numTwo = null;
+let operator = null;
+let answer = null;
 
 function allClear() {
   numOne = numTwo = operator = answer = display.value = null;
 }
+
 function remove() {}
 
 function add(addendOne, addendTwo) {
@@ -48,43 +49,35 @@ function multiply(multiplicand, multiplier) {
 
 function divide(dividend, divisor) {
   if (divisor === 0) {
-    return undefined;
+    return "undefined";
   }
   return dividend / divisor;
 }
 
-function roundTo(num, decimal) {
+function round(num, decimal) {
   return Number(num.toFixed(decimal));
 }
 
-function calc(operation, operandOne, operandTwo) {
-  if (operandTwo === undefined) {
-    answer = operandOne;
-    numOne = answer;
-    return answer;
+function calc() {
+  if (operator === null) {
+    return numOne;
+  } else if (numTwo === null) {
+    answer = operator(numOne, numOne);
   } else {
-    answer = roundTo(operation(operandOne, operandTwo), 20);
-    numOne = answer;
-    return answer;
+    answer = operator(numOne, numTwo);
   }
+  return (display.value = round(answer, 20));
 }
 
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
-btnCalc.addEventListener("click", () => {
-  if (operator === undefined) {
-    return numOne;
-  } else {
-    calc(operator, numOne, numTwo);
-    display.value = answer;
-  }
-});
+btnCalc.addEventListener("click", calc);
 
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (operator === undefined) {
+    if (operator === null) {
       numOne = Number((display.value += btn.value));
-    } else if (numOne === answer) {
+    } else if (answer !== null) {
       display.value = null;
       numOne = null;
       numOne = Number((display.value += btn.value));
