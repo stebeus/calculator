@@ -59,6 +59,7 @@ function roundTo(num, decimal) {
 
 function calc(operation, operandOne, operandTwo) {
   answer = roundTo(operation(operandOne, operandTwo), 20);
+  numOne = answer;
   return answer;
 }
 
@@ -72,6 +73,10 @@ btnCalc.addEventListener("click", () => {
 inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (operator === undefined) {
+      numOne = Number((display.value += btn.value));
+    } else if (numOne === answer) {
+      display.value = null;
+      numOne = null;
       numOne = Number((display.value += btn.value));
     } else {
       numTwo = Number((display.value += btn.value));
