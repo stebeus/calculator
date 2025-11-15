@@ -32,7 +32,8 @@ function divide(dividend, divisor) {
 }
 
 function calc() {
-  return operator(numOne, numTwo);
+  let answer = operator(numOne, numTwo);
+  display.textContent = answer;
 }
 
 function insertNum(input) {
@@ -51,6 +52,8 @@ function insertOperator(input) {
     display.textContent = empty;
   });
 }
+
+btnCalc.addEventListener("click", calc);
 
 inputNum.forEach(insertNum);
 inputOperator.forEach(insertOperator);
