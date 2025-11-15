@@ -77,12 +77,7 @@ inputNum.forEach((btn) => {
   btn.addEventListener("click", () => {
     if (operator === null) {
       numOne = Number((display.value += btn.value));
-    } else if (answer !== null) {
-      display.value = null;
-      numOne = null;
-      numOne = Number((display.value += btn.value));
     } else {
-      display.value = null;
       numTwo = Number((display.value += btn.value));
     }
   });
@@ -90,11 +85,14 @@ inputNum.forEach((btn) => {
 
 inputOperator.forEach((btn) => {
   btn.addEventListener("click", () => {
-    if (numOne !== null && numTwo !== null) {
+    if (answer !== null) {
+      numOne = answer;
+    } else if (numOne !== null && operator !== null && numTwo !== null) {
       calc();
-      operator = window[btn.value];
-    } else {
-      operator = window[btn.value];
+      console.log("yes");
     }
+    operator = window[btn.value];
+    display.value = null;
+    console.log(operator);
   });
 });
