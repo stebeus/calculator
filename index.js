@@ -39,8 +39,11 @@ function insertNum(input) {
   input.addEventListener("click", () => {
     if (display.textContent === "0") {
       display.textContent = empty;
+    } else if (numOne !== null) {
+      numTwo = display.textContent += input.value;
+    } else {
+      numOne = display.textContent += input.value;
     }
-    display.textContent += input.value;
   });
 }
 
