@@ -42,4 +42,11 @@ function insertNum(input) {
   });
 }
 
+function insertOperator(input) {
+  input.addEventListener("click", () => {
+    operator = window[input.value];
+  });
+}
+
 inputNum.forEach(insertNum);
+inputOperator.forEach(insertOperator);
