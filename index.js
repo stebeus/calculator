@@ -47,6 +47,7 @@ function insertNum(input) {
 function insertOperator(input) {
   input.addEventListener("click", () => {
     operator = window[input.value];
+    display.textContent = empty;
   });
 }
 
