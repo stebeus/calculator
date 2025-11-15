@@ -39,9 +39,9 @@ function calc() {
 function insertNum(input) {
   input.addEventListener("click", () => {
     if (operator !== null) {
-      numTwo = display.textContent += input.value;
+      numTwo = Number((display.textContent += input.value));
     } else {
-      numOne = display.textContent += input.value;
+      numOne = Number((display.textContent += input.value));
     }
   });
 }
