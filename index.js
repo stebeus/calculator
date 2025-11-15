@@ -31,8 +31,12 @@ function divide(dividend, divisor) {
   return divisor === 0 ? "Undefined" : dividend / divisor;
 }
 
+function round(num, decimalAmount) {
+  return Number(num.toFixed(decimalAmount));
+}
+
 function calc() {
-  let answer = operator(numOne, numTwo);
+  let answer = round(operator(numOne, numTwo), 10);
   numOne = display.textContent = answer;
 }
 
