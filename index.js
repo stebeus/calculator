@@ -32,3 +32,14 @@ function divide(dividend, divisor) {
 function calc() {
   return operator(numOne, numTwo);
 }
+
+function insertNum(input) {
+  input.addEventListener("click", () => {
+    if (display.textContent === "0") {
+      display.textContent = "";
+    }
+    display.textContent += input.value;
+  });
+}
+
+inputNum.forEach(insertNum);
