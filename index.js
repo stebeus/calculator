@@ -1,5 +1,14 @@
 "use strict";
 
+const display = document.querySelector(".display");
+
+const btnAllClear = document.querySelector("[data-action='all-clear']");
+const btnRemove = document.querySelector("[data-action='remove']");
+const btnCalc = document.querySelector("[data-action='calc']");
+
+const inputNum = document.querySelectorAll("[data-input='num']");
+const inputOperator = document.querySelectorAll("[data-input='operator']");
+
 let numOne = null;
 let numTwo = null;
 let operator = null;
