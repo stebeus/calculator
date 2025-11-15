@@ -9,6 +9,8 @@ const btnCalc = document.querySelector("[data-action='calc']");
 const inputNum = document.querySelectorAll("[data-input='num']");
 const inputOperator = document.querySelectorAll("[data-input='operator']");
 
+const empty = "";
+
 let numOne = null;
 let numTwo = null;
 let operator = null;
@@ -36,7 +38,7 @@ function calc() {
 function insertNum(input) {
   input.addEventListener("click", () => {
     if (display.textContent === "0") {
-      display.textContent = "";
+      display.textContent = empty;
     }
     display.textContent += input.value;
   });
