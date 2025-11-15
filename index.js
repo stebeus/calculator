@@ -56,7 +56,14 @@ function calc() {
 
 function insertNum(input) {
   input.addEventListener("click", () => {
-    if (operator !== null) {
+    if (answer !== null) {
+      numOne = null;
+      numTwo = null;
+      operator = null;
+      answer = null;
+      display.textContent = empty;
+      numOne = Number((display.textContent += input.value));
+    } else if (operator !== null) {
       numTwo = Number((display.textContent += input.value));
     } else {
       numOne = Number((display.textContent += input.value));
