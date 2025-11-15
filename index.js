@@ -14,6 +14,7 @@ const empty = "";
 let numOne = null;
 let numTwo = null;
 let operator = null;
+let answer = null;
 
 function allClear() {
   numOne = numTwo = operator = null;
@@ -41,8 +42,6 @@ function round(num, decimalAmount) {
 }
 
 function calc() {
-  let answer = null;
-
   if (operator === null) {
     display.textContent = numOne;
   } else if (numTwo === null) {
