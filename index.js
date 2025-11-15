@@ -41,10 +41,16 @@ function round(num, decimalAmount) {
 }
 
 function calc() {
+  let answer = null;
+
   if (operator === null) {
     display.textContent = numOne;
+  } else if (numTwo === null) {
+    numTwo = numOne;
+    answer = round(operator(numOne, numTwo), 10);
+    numOne = display.textContent = answer;
   } else {
-    let answer = round(operator(numOne, numTwo), 10);
+    answer = round(operator(numOne, numTwo), 10);
     numOne = display.textContent = answer;
   }
 }
