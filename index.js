@@ -33,7 +33,7 @@ function divide(dividend, divisor) {
 
 function calc() {
   let answer = operator(numOne, numTwo);
-  display.textContent = answer;
+  numOne = display.textContent = answer;
 }
 
 function insertNum(input) {
