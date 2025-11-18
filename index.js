@@ -34,3 +34,11 @@ function divide(dividend, divisor) {
 function calculate() {
   return operator(numOne, numTwo);
 }
+
+function insertNum(input) {
+  input.addEventListener("click", () => {
+    numOne = Number((display.value += input.value));
+  });
+}
+
+inputNums.forEach(insertNum);
