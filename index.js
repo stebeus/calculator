@@ -2,6 +2,7 @@
 
 const btnAllClear = document.querySelector("#all-clear");
 const btnRemove = document.querySelector("#remove");
+const btnCalc = document.querySelector("#calculate");
 
 let numOne = null;
 let numTwo = null;
