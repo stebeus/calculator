@@ -6,6 +6,8 @@ const btnCalc = document.querySelector("#calculate");
 
 const inputDecimal = document.querySelector("[data-input='decimal']");
 
+const inputNums = document.querySelectorAll("[data-input='num']");
+
 let numOne = null;
 let numTwo = null;
 let operator = null;
