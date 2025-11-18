@@ -19,3 +19,7 @@ function multiply(multiplicand, multiplier) {
 function divide(dividend, divisor) {
   return divisor === 0 ? "Undefined" : dividend / divisor;
 }
+
+function calculate() {
+  return operator(numOne, numTwo);
+}
