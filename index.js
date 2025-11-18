@@ -4,6 +4,8 @@ const btnAllClear = document.querySelector("#all-clear");
 const btnRemove = document.querySelector("#remove");
 const btnCalc = document.querySelector("#calculate");
 
+const inputDecimal = document.querySelector("[data-input='decimal']");
+
 let numOne = null;
 let numTwo = null;
 let operator = null;
