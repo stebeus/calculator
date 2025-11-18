@@ -1,5 +1,8 @@
 "use strict";
 
+const btnAllClear = document.querySelector("#all-clear");
+const btnRemove = document.querySelector("#remove");
+
 let numOne = null;
 let numTwo = null;
 let operator = null;
