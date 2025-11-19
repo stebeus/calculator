@@ -36,6 +36,10 @@ function divide(dividend, divisor) {
   return divisor === 0 ? "Undefined" : dividend / divisor;
 }
 
+function round(num, decimal) {
+  return Number(num.toFixed(decimal));
+}
+
 function calculate() {
   answer = operator(numOne, numTwo);
   numOne = answer;
