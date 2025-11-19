@@ -55,6 +55,15 @@ function calculate() {
   operator = null;
 }
 
+function insertDecimal() {
+  if (display.value.includes(".")) {
+    return (inputDecimal.value = "");
+  }
+
+  inputDecimal.value = ".";
+  display.value += inputDecimal.value;
+}
+
 function insertNum(input) {
   input.addEventListener("click", () => {
     if (answer !== null && !operator) {
@@ -82,6 +91,8 @@ function insertOperator(input) {
 
 btnAllClear.addEventListener("click", allClear);
 btnCalc.addEventListener("click", calculate);
+
+inputDecimal.addEventListener("click", insertDecimal);
 
 inputNums.forEach(insertNum);
 inputOperators.forEach(insertOperator);
