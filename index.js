@@ -70,7 +70,7 @@ function insertNum(input) {
       allClear();
       numOne = Number((display.value += input.value));
     } else if (operator !== null) {
-      if (!numTwo) {
+      if (numTwo === null) {
         display.value = null;
       }
       numTwo = Number((display.value += input.value));
