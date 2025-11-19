@@ -68,6 +68,9 @@ function insertNum(input) {
 
 function insertOperator(input) {
   input.addEventListener("click", () => {
+    if (numOne !== null && numTwo !== null) {
+      calculate();
+    }
     operator = window[input.value];
   });
 }
