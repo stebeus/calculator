@@ -87,6 +87,7 @@ function insertOperator(input) {
     if (numOne !== null && numTwo !== null) {
       calculate();
     }
+
     operator = window[input.value];
   }
 
