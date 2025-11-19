@@ -41,11 +41,8 @@ function round(num, decimal) {
 }
 
 function calculate() {
-  if (!operator) {
-    return;
-  } else if (!numTwo) {
-    numTwo = numOne;
-  }
+  if (!operator) return;
+  else if (!numTwo) numTwo = numOne;
 
   answer = round(operator(numOne, numTwo), 10);
   numOne = answer;
@@ -61,9 +58,7 @@ function insertNum(input) {
       allClear();
       numOne = Number((display.value += input.value));
     } else if (operator !== null) {
-      if (!numTwo) {
-        display.value = null;
-      }
+      if (!numTwo) display.value = null;
       numTwo = Number((display.value += input.value));
     } else {
       numOne = Number((display.value += input.value));
