@@ -38,7 +38,8 @@ function divide(dividend, divisor) {
 
 function calculate() {
   answer = operator(numOne, numTwo);
-  return (display.value = answer);
+  numOne = answer;
+  return (display.value = numOne);
 }
 
 function insertNum(input) {
