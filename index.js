@@ -19,10 +19,20 @@ let answer = null;
 function handleKeydown(e) {
   const keyBinding = e.key.toLowerCase();
 
-  if (keyBinding === "delete") allClear();
-  if (keyBinding === "backspace") remove();
-  if (keyBinding === "enter") calculate();
-  if (keyBinding === ".") insertDecimal();
+  switch (keyBinding) {
+    case "c":
+      allClear();
+      break;
+    case "backspace":
+      remove();
+      break;
+    case "enter":
+      calculate();
+      break;
+    case ".":
+      insertDecimal();
+      break;
+  }
 
   console.log(keyBinding);
 }
