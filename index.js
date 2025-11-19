@@ -40,7 +40,7 @@ function calculate() {
   answer = operator(numOne, numTwo);
   numOne = answer;
   operator = null;
-  return (display.value = numOne);
+  display.value = numOne;
 }
 
 function insertNum(input) {
