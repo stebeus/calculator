@@ -19,6 +19,9 @@ let answer = null;
 function handleKeydown(e) {
   const keyBinding = e.key.toLowerCase();
 
+  if (keyBinding === "delete") allClear();
+  if (keyBinding === "backspace") remove();
+
   console.log(keyBinding);
 }
 
