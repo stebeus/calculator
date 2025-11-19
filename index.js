@@ -20,6 +20,16 @@ function allClear() {
   numOne = numTwo = operator = answer = display.value = null;
 }
 
+function remove() {
+  display.value = display.value.slice(0, -1);
+
+  if (operator !== null) {
+    return (numTwo = Number(display.value));
+  }
+
+  numOne = Number(display.value);
+}
+
 function add(addendOne, addendTwo) {
   return addendOne + addendTwo;
 }
@@ -95,6 +105,7 @@ function insertOperator(input) {
 }
 
 btnAllClear.addEventListener("click", allClear);
+btnRemove.addEventListener("click", remove);
 btnCalc.addEventListener("click", calculate);
 
 inputDecimal.addEventListener("click", insertDecimal);
