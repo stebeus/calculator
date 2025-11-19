@@ -54,5 +54,7 @@ function insertOperator(input) {
   });
 }
 
+btnCalc.addEventListener("click", calculate);
+
 inputNums.forEach(insertNum);
 inputOperators.forEach(insertOperator);
