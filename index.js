@@ -49,9 +49,10 @@ function calculate() {
 
   answer = round(operator(numOne, numTwo), 10);
   numOne = answer;
+  display.value = numOne;
+
   numTwo = null;
   operator = null;
-  display.value = numOne;
 }
 
 function insertNum(input) {
