@@ -43,7 +43,10 @@ function round(num, decimal) {
 function calculate() {
   if (!operator) {
     return;
+  } else if (!numTwo) {
+    numTwo = numOne;
   }
+
   answer = round(operator(numOne, numTwo), 10);
   numOne = answer;
   numTwo = null;
