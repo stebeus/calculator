@@ -37,7 +37,14 @@ function calculate() {
 
 function insertNum(input) {
   input.addEventListener("click", () => {
-    numOne = Number((display.value += input.value));
+    if (operator !== null) {
+      if (!numTwo) {
+        display.value = null;
+      }
+      numTwo = Number((display.value += input.value));
+    } else {
+      numOne = Number((display.value += input.value));
+    }
   });
 }
 
