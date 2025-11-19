@@ -65,7 +65,7 @@ function insertDecimal() {
 }
 
 function insertNum(input) {
-  input.addEventListener("click", () => {
+  function handleInput() {
     if (answer !== null && !operator) {
       allClear();
       numOne = Number((display.value += input.value));
@@ -77,16 +77,20 @@ function insertNum(input) {
     } else {
       numOne = Number((display.value += input.value));
     }
-  });
+  }
+
+  input.addEventListener("click", handleInput);
 }
 
 function insertOperator(input) {
-  input.addEventListener("click", () => {
+  function handleInput() {
     if (numOne !== null && numTwo !== null) {
       calculate();
     }
     operator = window[input.value];
-  });
+  }
+
+  input.addEventListener("click", handleInput);
 }
 
 btnAllClear.addEventListener("click", allClear);
