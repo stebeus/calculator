@@ -21,6 +21,7 @@ function handleKeydown(e) {
 
   if (keyBinding === "delete") allClear();
   if (keyBinding === "backspace") remove();
+  if (keyBinding === "enter") calculate();
 
   console.log(keyBinding);
 }
