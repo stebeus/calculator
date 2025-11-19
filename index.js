@@ -15,6 +15,10 @@ let numOne = null;
 let numTwo = null;
 let operator = null;
 
+function allClear() {
+  numOne = numTwo = operator = display.value = null;
+}
+
 function add(addendOne, addendTwo) {
   return addendOne + addendTwo;
 }
@@ -54,6 +58,7 @@ function insertOperator(input) {
   });
 }
 
+btnAllClear.addEventListener("click", allClear);
 btnCalc.addEventListener("click", calculate);
 
 inputNums.forEach(insertNum);
