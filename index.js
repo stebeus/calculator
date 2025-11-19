@@ -32,7 +32,7 @@ function divide(dividend, divisor) {
 }
 
 function calculate() {
-  return operator(numOne, numTwo);
+  return (display.value = operator(numOne, numTwo));
 }
 
 function insertNum(input) {
