@@ -14,6 +14,7 @@ const inputOperators = document.querySelectorAll("[data-input='operator']");
 let numOne = null;
 let numTwo = null;
 let operator = null;
+let answer = null;
 
 function allClear() {
   numOne = numTwo = operator = display.value = null;
