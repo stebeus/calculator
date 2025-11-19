@@ -22,6 +22,7 @@ function handleKeydown(e) {
   if (keyBinding === "delete") allClear();
   if (keyBinding === "backspace") remove();
   if (keyBinding === "enter") calculate();
+  if (keyBinding === ".") insertDecimal();
 
   console.log(keyBinding);
 }
