@@ -17,7 +17,7 @@ let operator = null;
 let answer = null;
 
 function allClear() {
-  numOne = numTwo = operator = display.value = null;
+  numOne = numTwo = operator = answer = display.value = null;
 }
 
 function add(addendOne, addendTwo) {
