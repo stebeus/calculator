@@ -45,7 +45,10 @@ function calculate() {
 
 function insertNum(input) {
   input.addEventListener("click", () => {
-    if (operator !== null) {
+    if (answer !== null && !operator) {
+      allClear();
+      numOne = Number((display.value += input.value));
+    } else if (operator !== null) {
       if (!numTwo) {
         display.value = null;
       }
