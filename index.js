@@ -41,6 +41,9 @@ function round(num, decimal) {
 }
 
 function calculate() {
+  if (!operator) {
+    return;
+  }
   answer = round(operator(numOne, numTwo), 10);
   numOne = answer;
   numTwo = null;
