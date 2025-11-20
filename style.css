@@ -35,4 +35,5 @@ button {
 
 .operators {
   display: flex;
+  width: 4rem;
 }
