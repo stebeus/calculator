@@ -47,6 +47,10 @@ function divide(dividend, divisor) {
   return divisor === 0 ? undefined : dividend / divisor;
 }
 
+function percentage(percent, num) {
+  return num * (percent / 100);
+}
+
 function round(num, decimal) {
   return num === undefined ? undefined : Number(num.toFixed(decimal));
 }
