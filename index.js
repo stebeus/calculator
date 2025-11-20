@@ -115,6 +115,12 @@ function insertOperator(input) {
   input.addEventListener("click", handleInput);
 }
 
+function handleKeydown(e) {
+  const keyBinding = e.key.toLowerCase();
+}
+
+document.addEventListener("keydown", handleKeydown);
+
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
 btnCalc.addEventListener("click", calculate);
