@@ -1,3 +1,12 @@
+:root {
+  --clr-base: hsl(0 0 100);
+  --clr-base-secondary: hsl(from var(--clr-base) h s calc(l - 7));
+  --clr-content: hsl(0 0 5);
+  --clr-content-secondary: hsl(from var(--clr-content) h s calc(l + 25));
+  --clr-border: hsl(0 0 5 / 50%);
+  --clr-btn-all-clear: hsl(0, 84%, 48%);
+}
+
 *,
 *::before,
 *::after {
