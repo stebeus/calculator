@@ -1,17 +1,36 @@
 :root {
   color-scheme: light;
-  
+
   --clr-bg: hsl(from var(--clr-fg) h s calc(l - 10));
   --clr-mg: hsl(from var(--clr-fg) h s calc(l - 5));
   --clr-fg: hsl(0 0 100);
   --clr-txt: hsl(0 0 15);
-  --clr-border: hsl(0 0 5 / 10%);
+  --clr-border: hsl(0 0 0 / 10%);
   --clr-btn-ac: hsl(0 75 55);
   --clr-btn-op: hsl(from var(--clr-txt) h s calc(l + 20));
 
   --ff: Inter, system-ui, sans-serif;
   --font-display: 600 2.5rem var(--ff);
   --font-buttons: 500 2rem var(--ff);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --clr-fg: hsl(0 0 15);
+    --clr-txt: hsl(0 0 95);
+    --clr-border: hsl(0 0 100 / 5%);
+    --clr-btn-op: hsl(from var(--clr-txt) h s calc(l - 25));
+  }
+
+  .btn--all-clear,
+  .btn--operator {
+    --clr-border: hsl(0 0 0 / 10%);
+  }
+
+  .btn--all-clear {
+    --clr-fg: hsl(from var(--clr-txt));
+  }
 }
 
 *,
