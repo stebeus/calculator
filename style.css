@@ -33,12 +33,15 @@ button {
   gap: 0.5rem;
 }
 
-.numbers {
+.numbers,
+.operators {
   flex-wrap: wrap-reverse;
+}
+
+.numbers {
   width: 6rem;
 }
 
 .operators {
-  flex-wrap: wrap;
   width: 4rem;
 }
