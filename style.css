@@ -45,3 +45,7 @@ button {
 .operators {
   width: 4rem;
 }
+
+.btn--calculate {
+  flex-basis: 100%;
+}
