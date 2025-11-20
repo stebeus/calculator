@@ -5,6 +5,7 @@ const display = document.querySelector(".display");
 const btnAllClear = document.querySelector("#all-clear");
 const btnRemove = document.querySelector("#remove");
 const btnCalc = document.querySelector("#calculate");
+const btnChangeSign = document.querySelector("#change-sign");
 
 const inputDecimal = document.querySelector("[data-input='decimal']");
 
