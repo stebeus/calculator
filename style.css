@@ -10,3 +10,13 @@
   font: inherit;
   line-height: calc(1em + 0.5em);
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: white;
+  color: black;
+  font-family: system-ui, sans-serif;
+}
