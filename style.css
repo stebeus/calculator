@@ -2,10 +2,10 @@
   --clr-bg: hsl(from var(--clr-fg) h s calc(l - 10));
   --clr-mg: hsl(from var(--clr-fg) h s calc(l - 5));
   --clr-fg: hsl(0 0 100);
-  --clr-txt: hsl(0 0 5);
-  --clr-txt-muted: hsl(from var(--clr-txt) h s calc(l + 25));
+  --clr-txt: hsl(0 0 20);
   --clr-border: hsl(0 0 5 / 50%);
   --clr-btn-ac: hsl(0 80 55);
+  --clr-btn-op: hsl(from var(--clr-txt) h s calc(l + 15));
   --ff: Inter, system-ui, sans-serif;
   --font-display: 600 2.5rem var(--ff);
   --font-buttons: 500 2rem var(--ff);
@@ -20,7 +20,7 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
+  color: inherit;
   line-height: calc(1em + 0.5em);
 }
 
@@ -48,7 +48,6 @@ button {
   height: 2em;
   padding: 1em;
   background-color: var(--clr-fg);
-  color: var(--clr-txt-muted);
   font: var(--font-buttons);
 }
 
@@ -88,5 +87,5 @@ main {
 }
 
 .btn--operator {
-  background-color: var(--clr-txt-muted);
+  background-color: var(--clr-btn-op);
 }
