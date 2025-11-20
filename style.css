@@ -78,12 +78,15 @@ main {
   width: fit-content;
 }
 
+.btn--all-clear,
+.btn--operator {
+  color: var(--clr-fg);
+}
+
 .btn--all-clear {
   background-color: var(--clr-btn-ac);
-  color: var(--clr-fg);
 }
 
 .btn--operator {
   background-color: var(--clr-txt-muted);
-  color: var(--clr-fg);
 }
