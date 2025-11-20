@@ -29,6 +29,10 @@ button {
   display: flex;
 }
 
+.buttons {
+  gap: 0.5rem;
+}
+
 .numbers {
   flex-wrap: wrap-reverse;
   width: 6rem;
