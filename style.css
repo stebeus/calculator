@@ -16,3 +16,16 @@ body {
   color: black;
   font-family: system-ui, sans-serif;
 }
+
+.buttons {
+  display: flex;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.operators {
+  display: flex;
+}
