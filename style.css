@@ -37,3 +37,9 @@ main {
   gap: 2.5em;
   width: 18.5rem;
 }
+
+.display {
+  padding: 0.25em;
+  font-size: 2.5rem;
+  text-align: right;
+}
