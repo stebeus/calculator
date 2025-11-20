@@ -117,6 +117,21 @@ function insertOperator(input) {
 
 function handleKeydown(e) {
   const keyBinding = e.key.toLowerCase();
+
+  switch (keyBinding) {
+    case "c":
+      allClear();
+      break;
+    case "backspace":
+      remove();
+      break;
+    case "enter":
+      calculate();
+      break;
+    case "s":
+      changeSign();
+      break;
+  }
 }
 
 document.addEventListener("keydown", handleKeydown);
