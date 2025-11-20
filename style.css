@@ -79,3 +79,8 @@ main {
   color: var(--clr-base);
   text-transform: uppercase;
 }
+
+.btn--operator {
+  background-color: var(--clr-content);
+  color: var(--clr-base);
+}
