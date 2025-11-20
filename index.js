@@ -54,7 +54,7 @@ function round(num, decimal) {
 function calculate() {
   if (!operator) {
     return;
-  } else if (!numTwo) {
+  } else if (numTwo === null) {
     numTwo = numOne;
   }
 
