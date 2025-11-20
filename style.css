@@ -43,3 +43,9 @@ main {
   font-size: 2.5rem;
   text-align: right;
 }
+
+.buttons,
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
