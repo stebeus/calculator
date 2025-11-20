@@ -75,6 +75,16 @@ function insertDecimal() {
   display.value += inputDecimal.value;
 }
 
+function changeSign() {
+  if (!display.value) {
+    return;
+  } else if (operator !== null) {
+    return (numTwo = display.value *= -1);
+  }
+
+  numOne = display.value *= -1;
+}
+
 function insertNum(input) {
   function handleInput() {
     if (answer !== null && !operator) {
@@ -108,6 +118,7 @@ function insertOperator(input) {
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
 btnCalc.addEventListener("click", calculate);
+btnChangeSign.addEventListener("click", changeSign);
 
 inputDecimal.addEventListener("click", insertDecimal);
 
