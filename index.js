@@ -44,11 +44,11 @@ function multiply(multiplicand, multiplier) {
 }
 
 function divide(dividend, divisor) {
-  return divisor === 0 ? "Undefined" : dividend / divisor;
+  return divisor === 0 ? undefined : dividend / divisor;
 }
 
 function round(num, decimal) {
-  return Number(num.toFixed(decimal));
+  return num === undefined ? undefined : Number(num.toFixed(decimal));
 }
 
 function calculate() {
