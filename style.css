@@ -110,11 +110,7 @@ main {
   white-space: nowrap;
 
   &:hover {
-    cursor: default;
-  }
-
-  &:focus {
-    outline-width: 0;
+    cursor: pointer;
   }
 }
 
