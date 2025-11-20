@@ -49,3 +49,8 @@ main {
   display: flex;
   gap: 0.5rem;
 }
+
+.buttons {
+  flex-wrap: wrap;
+  width: fit-content;
+}
