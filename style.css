@@ -23,17 +23,17 @@ button {
   padding: 0.15em;
 }
 
-.buttons {
+.buttons,
+.numbers,
+.operators {
   display: flex;
 }
 
 .numbers {
-  display: flex;
   flex-wrap: wrap-reverse;
   width: 6rem;
 }
 
 .operators {
-  display: flex;
   width: 4rem;
 }
