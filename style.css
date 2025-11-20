@@ -1,3 +1,11 @@
+/*
+  CSS DIRECTORY
+    1. =GLOBAL
+    2. =CALCULATOR
+*/
+
+/* ===GLOBAL=== */
+
 :root {
   color-scheme: light;
 
@@ -55,6 +63,8 @@ body {
   color: var(--clr-txt);
 }
 
+/* ===CALCULATOR=== */
+
 button,
 main,
 .display {
@@ -88,11 +98,15 @@ main {
   background-color: var(--clr-mg);
 }
 
+/* --Display-- */
+
 .display {
   padding: 0.25em;
   font: var(--font-display);
   text-align: right;
 }
+
+/* --Button Pad-- */
 
 .buttons,
 .row {
