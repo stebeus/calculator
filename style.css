@@ -3,7 +3,7 @@
   --clr-mg: hsl(from var(--clr-fg) h s calc(l - 5));
   --clr-fg: hsl(0 0 100);
   --clr-txt: hsl(0 0 20);
-  --clr-border: hsl(0 0 5 / 50%);
+  --clr-border: hsl(0 0 5 / 10%);
   --clr-btn-ac: hsl(0 75 55);
   --clr-btn-op: hsl(from var(--clr-txt) h s calc(l + 15));
   --ff: Inter, system-ui, sans-serif;
@@ -49,6 +49,12 @@ button {
   padding: 1em;
   background-color: var(--clr-fg);
   font: var(--font-buttons);
+
+  &:hover,
+  :focus {
+    cursor: pointer;
+    box-shadow: inset 0 0 999px 999px var(--clr-border);
+  }
 }
 
 main {
