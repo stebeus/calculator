@@ -16,27 +16,6 @@ let numTwo = null;
 let operator = null;
 let answer = null;
 
-function handleKeydown(e) {
-  const keyBinding = e.key.toLowerCase();
-
-  switch (keyBinding) {
-    case "c":
-      allClear();
-      break;
-    case "backspace":
-      remove();
-      break;
-    case "enter":
-      calculate();
-      break;
-    case ".":
-      insertDecimal();
-      break;
-  }
-
-  console.log(keyBinding);
-}
-
 function allClear() {
   numOne = numTwo = operator = answer = display.value = null;
 }
@@ -124,8 +103,6 @@ function insertOperator(input) {
 
   input.addEventListener("click", handleInput);
 }
-
-document.addEventListener("keydown", handleKeydown);
 
 btnAllClear.addEventListener("click", allClear);
 btnRemove.addEventListener("click", remove);
