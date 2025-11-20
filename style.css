@@ -34,7 +34,7 @@ button {
 main {
   display: flex;
   flex-direction: column;
-  gap: 2.5em;
+  gap: 1.75em;
   width: 18.5rem;
 }
 
