@@ -82,6 +82,11 @@ main {
   text-transform: uppercase;
 }
 
+.btn--calculate {
+  background-color: var(--clr-btn-calculate);
+  color: var(--clr-base);
+}
+
 .btn--operator {
   background-color: var(--clr-btn-operator);
   color: var(--clr-content);
