@@ -27,6 +27,7 @@ button {
   align-items: center;
   width: 2em;
   height: 2em;
+  border: none;
   padding: 1em;
   font-size: 2rem;
 }
