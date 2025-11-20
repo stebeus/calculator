@@ -25,8 +25,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-  background-color: white;
-  color: black;
+  background-color: var(--clr-base);
+  color: var(--clr-content);
   font-family: system-ui, sans-serif;
 }
 
@@ -43,6 +43,8 @@ button {
   height: 2em;
   border: none;
   padding: 1em;
+  background-color: var(--clr-base-secondary);
+  color: var(--clr-content-secondary);
   font-size: 2rem;
 }
 
@@ -54,7 +56,7 @@ main {
 }
 
 .display {
-  border: 1px solid lightgray;
+  border: 1px solid var(--clr-border);
   padding: 0.25em;
   font-size: 2.5rem;
   text-align: right;
@@ -73,5 +75,7 @@ main {
 
 .btn--all-clear {
   width: 8.5rem;
+  background-color: var(--clr-btn-all-clear);
+  color: var(--clr-base);
   text-transform: uppercase;
 }
