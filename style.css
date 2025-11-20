@@ -83,6 +83,6 @@ main {
 }
 
 .btn--operator {
-  background-color: var(--clr-content);
-  color: var(--clr-base);
+  background-color: var(--clr-btn-operator);
+  color: var(--clr-content);
 }
