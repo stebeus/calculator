@@ -61,7 +61,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.75em;
-  width: 20rem;
+  width: 22rem;
   padding: 1.675rem 1.25rem;
   background-color: var(--clr-mg);
 }
