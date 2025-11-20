@@ -17,6 +17,12 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+button {
+  width: 2em;
+  height: 2em;
+  padding: 0.15em;
+}
+
 .buttons {
   display: flex;
 }
