@@ -54,3 +54,8 @@ main {
   flex-wrap: wrap;
   width: fit-content;
 }
+
+.btn--all-clear {
+  width: 9rem;
+  text-transform: uppercase;
+}
