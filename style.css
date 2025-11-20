@@ -1,12 +1,11 @@
 :root {
-  --clr-base: hsl(0 0 100);
-  --clr-base-secondary: hsl(from var(--clr-base) h s calc(l - 7));
-  --clr-content: hsl(0 0 5);
-  --clr-content-secondary: hsl(from var(--clr-content) h s calc(l + 25));
+  --clr-bg: hsl(from var(--clr-fg) h s calc(l - 10));
+  --clr-mg: hsl(from var(--clr-fg) h s calc(l - 5));
+  --clr-fg: hsl(0 0 100);
+  --clr-txt: hsl(0 0 5);
+  --clr-txt-muted: hsl(from var(--clr-txt) h s calc(l + 25));
   --clr-border: hsl(0 0 5 / 50%);
-  --clr-btn-all-clear: hsl(0, 84%, 48%);
-  --clr-btn-calculate: hsl(219, 84%, 53%);
-  --clr-btn-operator: hsl(from var(--clr-base) h s calc(l - 25));
+  --clr-btn-ac: hsl(0 80 55);
 }
 
 *,
@@ -27,14 +26,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-  background-color: var(--clr-base);
-  color: var(--clr-content);
+  background-color: var(--clr-bg);
+  color: var(--clr-txt);
   font-family: system-ui, sans-serif;
 }
 
 button,
+main,
 .display {
-  border-radius: 7px;
+  border: none;
+  border-radius: 5px;
 }
 
 button {
@@ -43,10 +44,9 @@ button {
   align-items: center;
   width: 2em;
   height: 2em;
-  border: none;
   padding: 1em;
-  background-color: var(--clr-base-secondary);
-  color: var(--clr-content-secondary);
+  background-color: var(--clr-fg);
+  color: var(--clr-txt-muted);
   font-size: 2rem;
 }
 
@@ -54,11 +54,12 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1.75em;
-  width: 17.5rem;
+  width: 20rem;
+  padding: 1.675rem 1.25rem;
+  background-color: var(--clr-mg);
 }
 
 .display {
-  border: 1px solid var(--clr-border);
   padding: 0.25em;
   font-size: 2.5rem;
   text-align: right;
@@ -76,18 +77,11 @@ main {
 }
 
 .btn--all-clear {
-  width: 8.5rem;
-  background-color: var(--clr-btn-all-clear);
-  color: var(--clr-base);
-  text-transform: uppercase;
-}
-
-.btn--calculate {
-  background-color: var(--clr-btn-calculate);
-  color: var(--clr-base);
+  background-color: var(--clr-btn-ac);
+  color: var(--clr-fg);
 }
 
 .btn--operator {
-  background-color: var(--clr-btn-operator);
-  color: var(--clr-content);
+  background-color: var(--clr-txt-muted);
+  color: var(--clr-fg);
 }
