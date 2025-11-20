@@ -30,6 +30,7 @@ button {
 .numbers {
   display: flex;
   flex-wrap: wrap-reverse;
+  width: 6rem;
 }
 
 .operators {
