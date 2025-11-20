@@ -10,36 +10,42 @@
     <main>
       <input class="display" type="text" value="" readonly />
       <div class="buttons">
-        <div class="numbers">
-          <button data-input="num" value="0">0</button>
-          <button data-input="decimal" value=".">.</button>
-          <button id="change-sign">+/-</button>
-          <button data-input="num" value="1">1</button>
-          <button data-input="num" value="2">2</button>
-          <button data-input="num" value="3">3</button>
-          <button data-input="num" value="4">4</button>
-          <button data-input="num" value="5">5</button>
-          <button data-input="num" value="6">6</button>
-          <button data-input="num" value="7">7</button>
-          <button data-input="num" value="8">8</button>
-          <button data-input="num" value="9">9</button>
-        </div>
-        <div class="operators">
-          <button class="btn--calculate" id="calculate">=</button>
-          <button class="btn--operator" data-input="operator" value="add">
-            +
-          </button>
-          <button class="btn--operator" data-input="operator" value="subtract">
-            -
-          </button>
-          <button class="btn--operator" data-input="operator" value="multiply">
-            *
-          </button>
+        <div class="row">
+          <button id="all-clear" class="btn--ctrl">AC</button>
+          <button id="remove" class="btn--ctrl">←</button>
           <button class="btn--operator" data-input="operator" value="divide">
             ÷
           </button>
-          <button id="remove" class="btn--ctrl">←</button>
-          <button id="all-clear" class="btn--ctrl">AC</button>
+        </div>
+        <div class="row">
+          <button data-input="num" value="7">7</button>
+          <button data-input="num" value="8">8</button>
+          <button data-input="num" value="9">9</button>
+          <button class="btn--operator" data-input="operator" value="multiply">
+            *
+          </button>
+        </div>
+        <div class="row">
+          <button data-input="num" value="4">4</button>
+          <button data-input="num" value="5">5</button>
+          <button data-input="num" value="6">6</button>
+          <button class="btn--operator" data-input="operator" value="subtract">
+            -
+          </button>
+        </div>
+        <div class="row">
+          <button data-input="num" value="1">1</button>
+          <button data-input="num" value="2">2</button>
+          <button data-input="num" value="3">3</button>
+          <button class="btn--operator" data-input="operator" value="add">
+            +
+          </button>
+        </div>
+        <div class="row">
+          <button data-input="num" value="0">0</button>
+          <button data-input="decimal" value=".">.</button>
+          <button id="change-sign">+/-</button>
+          <button class="btn--calculate" id="calculate">=</button>
         </div>
       </div>
     </main>
