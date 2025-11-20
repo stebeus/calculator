@@ -12,6 +12,10 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
   background-color: white;
   color: black;
   font-family: system-ui, sans-serif;
