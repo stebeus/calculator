@@ -104,7 +104,6 @@ main {
   padding: 0.25em;
   font: var(--font-display);
   text-align: right;
-  direction: rtl;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
