@@ -20,3 +20,13 @@ body {
   color: black;
   font-family: system-ui, sans-serif;
 }
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+  font-size: 2rem;
+}
