@@ -5,8 +5,8 @@
   --clr-content-secondary: hsl(from var(--clr-content) h s calc(l + 25));
   --clr-border: hsl(0 0 5 / 50%);
   --clr-btn-all-clear: hsl(0, 84%, 48%);
-  --clr-btn-operator: hsl(from var(--clr-base) h s calc(l - 25));
   --clr-btn-calculate: hsl(219, 84%, 53%);
+  --clr-btn-operator: hsl(from var(--clr-base) h s calc(l - 25));
 }
 
 *,
