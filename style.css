@@ -35,5 +35,6 @@ button {
 }
 
 .operators {
+  flex-wrap: wrap;
   width: 4rem;
 }
