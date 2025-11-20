@@ -27,6 +27,14 @@ button {
   padding: 0.15em;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: gray;
+}
+
 .buttons,
 .numbers,
 .operators {
