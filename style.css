@@ -21,6 +21,11 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+button,
+.display {
+  border-radius: 7px;
+}
+
 button {
   display: flex;
   justify-content: center;
