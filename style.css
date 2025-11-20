@@ -30,3 +30,10 @@ button {
   padding: 1em;
   font-size: 2rem;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  width: 18.5rem;
+}
