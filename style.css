@@ -102,6 +102,7 @@ main {
 
 .display {
   padding: 0.25em;
+  background-color: var(--clr-fg);
   font: var(--font-display);
   text-align: right;
   overflow-x: auto;
